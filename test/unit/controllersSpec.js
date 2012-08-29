@@ -1,3 +1,4 @@
+/*global MyCtrl1, MyCtrl2*/
 'use strict';
 
 /* jasmine specs for controllers go here */
@@ -11,7 +12,8 @@ describe('MyCtrl1', function(){
 
 
   it('should ....', function() {
-    //spec body
+    
+    
   });
 });
 

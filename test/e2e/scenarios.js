@@ -41,5 +41,6 @@ describe('my app', function() {
         toMatch(/partial for view 2/);
     });
 
+
   });
 });

@@ -1,0 +1,11 @@
+{
+  "name": "angular-seed-mocha-testacular",
+  "description": "angular-seed, but with mocha instead of jasmine and testacular instead of jstd",
+  "version": "0.1.0",
+  "dependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "testacular": ">= 0.1.1",
+    "jshint": "*"
+  }
+}

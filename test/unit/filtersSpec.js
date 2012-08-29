@@ -1,8 +1,9 @@
 'use strict';
 
-/* jasmine specs for filters go here */
+/* mocha specs for filters go here */
 
 describe('filter', function() {
+	var expect = chai.expect;
   beforeEach(module('myApp.filters'));
 
 
@@ -13,7 +14,7 @@ describe('filter', function() {
 
 
     it('should replace VERSION', inject(function(interpolateFilter) {
-      expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
+      expect(interpolateFilter('before %VERSION% after')).to.equal('before TEST_VER after');
     }));
   });
 });

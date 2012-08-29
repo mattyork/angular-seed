@@ -1,9 +1,11 @@
 'use strict';
 
-/* jasmine specs for directives go here */
+/* mocha specs for directives go here */
 
 describe('directives', function() {
+  var expect = chai.expect;
   beforeEach(module('myApp.directives'));
+  
 
   describe('app-version', function() {
     it('should print current version', function() {
@@ -12,7 +14,7 @@ describe('directives', function() {
       });
       inject(function($compile, $rootScope) {
         var element = $compile('<span app-version></span>')($rootScope);
-        expect(element.text()).toEqual('TEST_VER');
+        expect(element.text()).to.equal('TEST_VER');
       });
     });
   });
