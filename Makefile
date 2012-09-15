@@ -11,7 +11,13 @@ test-unit:
 	@./node_modules/.bin/testacular start config/testacular.conf.js --single-run
 
 test-e2e:
-	@echo "\033[32mYou must have a web server running for this to work\033[0m"
+	@echo "\033[32mYou must `make server` in separate terminal for this to work\033[0m"
 	@./node_modules/.bin/testacular start config/testacular-e2e.conf.js
+
+server:
+	python -m SimpleHTTPServer
+
+test-server:
+	@./node_modules/.bin/testacular start config/testacular.conf.js
 
 .PHONY: all lint test
