@@ -1,0 +1,9 @@
+{
+  "name": "angular-seed-improved",
+  "description": "angular-seed with minor changes to make my workflow happy",
+  "version": "0.1.0",
+  "dependencies": {
+    "testacular": "*",
+    "jshint": "*"
+  }
+}

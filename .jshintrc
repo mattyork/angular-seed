@@ -1,0 +1,26 @@
+{
+  // strictifying options
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "forin": true,
+  "newcap": true,
+  "noarg": true,
+  "undef": true,
+  "trailing": true,
+  "node": true,
+
+  // Relaxing options
+  "boss": true,
+  "eqnull": true,
+  "laxcomma": true,
+  "expr": true,
+  "strict": false,
+  "predef": [
+    // testing code
+    "describe", "it", "chai", "beforeEach", "afterEach", "expect",
+    
+    // angular code
+    "angular", "browser", "element", "inject"
+  ]
+}
